@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+   <head>
+      <meta charset="UTF-8" />
+      <title>A date range picker for Bootstrap</title>
+      <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" media="all" href="daterangepicker.css" />
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="moment.js"></script>
+      <script type="text/javascript" src="daterangepicker.js"></script>
+
+    </head>
+
+    <body>
+        <br>
+        <br>
+    
+
+        <div class="container">
+            <div class="row">
+
+                <!-- REQUIRED SNIPPET FOR DATERANGEPICKER -->
+                <div class="form-group filters-date" id="datepicker">
+
+                    <div class="filters-startDate form-group">
+                        <label for="daterange-start">Start</label>
+                        <input type="text" id="daterange-start" class="date-input" value="" class="form-control" />
+                        <span class="glyphicon glyphicon-calendar calendar-icon"></span>
+                    </div>
+
+                    <div class="filters-endDate form-group">
+                        <label for="daterange-start">End</label>
+                        <input type="text" id="daterange-end" class="date-input" value="" class="form-control" />
+                        <span class="glyphicon glyphicon-calendar calendar-icon"></span>
+                    </div>
+                    
+                </div>
+                <!-- ends -->
+
+
+
+            </div>    
+        </div>
+
+        
+
+        <script type="text/javascript">
+            $(function() {
+
+                $('#datepicker').daterangepicker({
+                    startInputRef: '#daterange-start',// reequired -- give reference to the id of start date input field
+                    endInputRef: '#daterange-end', // required -- give reference to the id of end date input field
+                    startDate: "04/01/2018", // required -- dynamic values from server
+                    endDate: "10/01/2018", // required -- dynamic values from server
+
+                    locale: { // optional
+                        format: 'DD/MM/YYYY',
+                        // daysOfWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri','Sat'],
+                        monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+                    }
+
+                });
+
+
+                
+
+
+            });
+        </script>
+
+    </body>
+    
+</html>
