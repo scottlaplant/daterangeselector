@@ -303,6 +303,9 @@
 
 
 /* custom styles ------------------------ 04/01/2017 */
+.daterangepicker td{
+  position: relative
+}
 
 td.sat.in-range.available {
   border-radius: 0px 100px 100px 0px;
@@ -329,7 +332,7 @@ td.sun.in-range.available {
 
 .daterangepicker td.in-range.available:hover::before{
   background: #b3d4ea;
-  width: 110% ;
+  width: 50% ;
   left: -2px ;
   height: 32px;
   content: '';
@@ -454,7 +457,17 @@ th.noshow{
   border-color: #009cde;
 }
 
+.filters-endDate:hover:before {
+  background-color: #009cde;
+}
 
+.filters-endDate::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 1px;
+}
 
 .filters-startDate:before {
   content: '';
@@ -462,12 +475,15 @@ th.noshow{
   right: 0;
   height: 100%;
   width: 1px;
-  background-image: -webkit-linear-gradient(rgba(0, 156, 222), rgba(0, 156, 222, 0.25) 50%, rgba(0, 156, 222, 0));
-  background-image: -o-linear-gradient(rgba(0, 156, 222, 0), rgba(0, 156, 222, 0.25) 50%, rgba(0, 156, 222, 0));
-  background-image: linear-gradient(rgba(0, 156, 222, 0), rgba(0, 156, 222, 0.25) 50%, rgba(0, 156, 222, 0));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0));
   /* background-repeat: no-repeat; */
 }
 
+.filters-startDate:hover::before {
+  background: #009cde !important; 
+}
 
 .filters-endDate:before {
   content: '';
@@ -538,4 +554,32 @@ th.noshow{
   color: #0070ba;
   font-size: 20px;
   top: 16px;
+}
+
+.daterangepicker td.in-range.sun.available:hover::before{
+  width: 50% !important;
+  left: 17px !important;
+}
+.daterangepicker td.in-range.sat.available:hover::before{
+  width: 50% !important;
+  left: -1px !important;
+}
+
+.daterangepicker td.in-range.available:hover + td.in-range.available::before{
+  background: #b3d4ea;
+  width: 50% ;
+  left: -16px ;
+  height: 32px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  z-index: 0;
+}
+
+.daterangepicker td.in-range.before-end.available:hover::before {
+
+  width: 115% ;
+  left: -2px;
+
 }

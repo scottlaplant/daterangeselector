@@ -1333,13 +1333,21 @@
 
                     if ((dt.isAfter(startDate) && dt.isBefore(date)) || dt.isSame(date, 'day')) {
                         $(el).addClass('in-range');
+                        
                     } else {
                         $(el).removeClass('in-range');
                     }
 
+                    
+                    
+                    
+
                 });
             }
 
+            if($(e.target).next().hasClass("end-date")){
+                $(e.target).addClass('before-end');
+            }
         },
 
         clickDate: function(e) {
