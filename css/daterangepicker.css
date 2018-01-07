@@ -74,7 +74,7 @@
       .daterangepicker .calendar th, .daterangepicker .calendar td {
         white-space: nowrap;
         text-align: center;
-        min-width: 32px; 
+        min-width: 32px;
         width:32px;
         height: 32px;
         font-size: 14px;
@@ -183,7 +183,7 @@
       .daterangepicker .calendar-time select.disabled {
         color: #ccc;
         cursor: not-allowed; }
-  
+
   .ranges {
     font-size: 11px;
     float: none;
@@ -211,7 +211,7 @@
         background-color: #08c;
         border: 1px solid #08c;
         color: #fff; }
-  
+
 /*  Larger Screen Styling */
 @media (min-width: 564px) {
   .daterangepicker {
@@ -285,7 +285,7 @@
 .daterangepicker.dropdown-menu.ltr.show-calendar.opensright {
       top: 115px !important;
       border-color: #0070ba;
-      box-shadow: none !important; 
+      box-shadow: none !important;
 }
 
 
@@ -321,7 +321,7 @@ td.sun.in-range.available {
 
 .daterangepicker td.active{
   border-radius: 100% !important;
-  
+
 }
 
 .daterangepicker td.active{
@@ -387,7 +387,9 @@ td.sun.in-range.available {
   top: -1px;
   z-index: 0;
 }
-
+input#daterange-start.date-input {
+    outline: none;
+}
 
 .daterangepicker td.active.end-date::before{
   background: #b3d4ea;
@@ -399,6 +401,9 @@ td.sun.in-range.available {
   position: absolute;
   top: -1px;
   z-index: 0;
+}
+input#daterange-end.date-input {
+    outline: none;
 }
 
 .daterangepicker td.active + td.in-range{
@@ -486,7 +491,7 @@ th.noshow{
 }
 
 .filters-startDate:hover::before {
-  background: #009cde !important; 
+  background: #009cde !important;
 }
 
 .filters-endDate:before {
@@ -526,7 +531,7 @@ th.noshow{
     overflow: hidden;
     cursor: pointer;
     font-weight: 600;
-} 
+}
 
 .filters-startDate input.date-input, .filters-endDate input.date-input{
     font-family: 'PayPalSansSmall-Regular', sans-serif;
