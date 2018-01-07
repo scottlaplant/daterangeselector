@@ -1,4 +1,4 @@
-# Date Range Module for Bootstrap, v4
+# Date Range Selector Module for Bootstrap, v4
 
 A customizable date range selector for bootstrap, v4
 
