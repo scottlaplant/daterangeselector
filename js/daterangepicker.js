@@ -1,11 +1,14 @@
-/**
-* @version: 2.1.30
-* @author: Dan Grossman http://www.dangrossman.info/
-* @copyright: Copyright (c) 2012-2017 Dan Grossman. All rights reserved.
-* @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
-* @website: http://www.daterangepicker.com/
-*/
-// Follow the UMD template https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
+/************************************************************************
+ * 
+ * 
+ *                    DATERANGEPICKER
+ * 
+ * ***********************************************************************
+ */
+
+            
+
+
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Make globaly available as well
@@ -710,7 +713,7 @@
             var minDate = side == 'left' ? this.minDate : this.startDate;
             var maxDate = this.maxDate;
             var selected = side == 'left' ? this.startDate : this.endDate;
-            var arrow = this.locale.direction == 'ltr' ? {left: 'menu-left', right: 'menu-right'} : {left: 'menu-right', right: 'menu-left'};
+            var arrow = this.locale.direction == 'ltr' ? {left: 'angle-left', right: 'angle-right'} : {left: 'menu-left', right: 'menu-right'};
 
             var html = '<table class="table-condensed">';
             html += '<thead>';
@@ -721,7 +724,7 @@
                 html += '<th></th>';
 
             if ((!minDate || minDate.isBefore(calendar.firstDay)) && (!this.linkedCalendars || side == 'left')) {
-                html += '<th class="prev available"><i class="fa fa-' + arrow.left + ' glyphicon glyphicon-' + arrow.left + '"></i></th>';
+                html += '<th class="prev available"><i class="fa fa-' + arrow.left + ' fa fa-' + arrow.left + '"></i></th>';
             } else {
                 html += '<th></th>';
             }
@@ -763,7 +766,7 @@
 
             html += '<th colspan="5" class="month">' + dateHtml + '</th>';
             if ((!maxDate || maxDate.isAfter(calendar.lastDay))) {
-                html += '<th class="next available"><i class="fa fa-' + arrow.right + ' glyphicon glyphicon-' + arrow.right + '"></i></th>';
+                html += '<th class="next available"><i class="fa fa-' + arrow.right + ' fa fa-' + arrow.right + '"></i></th>';
             } else {
                 html += '<th></th>';
             }
