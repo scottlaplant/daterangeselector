@@ -21,8 +21,7 @@ js/moment.min.js
 
 
 ### Installing
-A step by step series of examples that tell you have to get a development env running
-Say what the step will be
+Installing the date range selector is as simple as including the css and javascript references (drop-in place)
 
 For the css:
 
