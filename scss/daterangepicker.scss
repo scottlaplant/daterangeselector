@@ -627,4 +627,11 @@ $secondary-text-color: #9da3a6; // calendar-- weekdays label
     outline: none;
   }
 
-  
+
+  .daterangepicker {
+    
+    td.start-date.on-start::before, td.wrong-direction::before {
+    content: none !important;
+ 
+    } 
+  }

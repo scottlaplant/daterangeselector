@@ -626,4 +626,7 @@ th.noshow {
 input#daterange-start.date-input, input#daterange-end.date-input {
   outline: none; }
 
+.daterangepicker td.start-date.on-start::before, .daterangepicker td.wrong-direction::before {
+  content: none !important; }
+
 /*# sourceMappingURL=daterangepicker.css.map */

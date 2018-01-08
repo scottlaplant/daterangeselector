@@ -1305,6 +1305,9 @@
             //ignore dates that can't be selected
             if (!$(e.target).hasClass('available')) return;
 
+            
+
+
             //have the text inputs above calendars reflect the date being hovered over
             var title = $(e.target).attr('data-title');
             var row = title.substr(1, 1);
@@ -1323,6 +1326,21 @@
             var rightCalendar = this.rightCalendar;
             var startDate = this.startDate;
             if (!this.endDate) {
+
+                if ($(e.target).hasClass('start-date')){
+                    $(e.target).addClass('on-start');
+                }else{
+                    $("td.start-date").removeClass('on-start');
+                }
+
+                if(date.isBefore(startDate)){
+                    $("td.start-date").addClass('wrong-direction');
+                    $(e.target).addClass('wrong-direction');
+                }else{
+                    $("td.start-date").removeClass('wrong-direction');
+                    $(e.target).removeClass('wrong-direction');
+                }
+
                 this.container.find('.calendar tbody td').each(function(index, el) {
 
                     //skip week numbers, only look at dates
@@ -1339,6 +1357,7 @@
                         
                     } else {
                         $(el).removeClass('in-range');
+                        
                     }
 
                     
