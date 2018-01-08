@@ -39,7 +39,7 @@ And for the javascript:
 Don't forget you'll need to include the regular bootstrap and jquery libraries too, depending on what you intend to use.
 
 
-## Built With
+<!-- ## Built With -->
 
 <!-- * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
