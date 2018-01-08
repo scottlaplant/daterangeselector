@@ -623,4 +623,7 @@ th.noshow {
 .daterangepicker thead i.fa {
   font-size: 24px; }
 
+input#daterange-start.date-input, input#daterange-end.date-input {
+  outline: none; }
+
 /*# sourceMappingURL=daterangepicker.css.map */

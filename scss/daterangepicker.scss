@@ -622,3 +622,9 @@ $secondary-text-color: #9da3a6; // calendar-- weekdays label
   .daterangepicker thead i.fa{
     font-size: 24px
   }
+
+  input#daterange-start.date-input, input#daterange-end.date-input {
+    outline: none;
+  }
+
+  
