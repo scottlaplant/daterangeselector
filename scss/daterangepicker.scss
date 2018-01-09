@@ -15,6 +15,9 @@ $secondary-text-color: #9da3a6; // calendar-- weekdays label
 
 /* *****************   Sytles ******************* */
 
+body {
+  background: #F5F7FA; }
+
 .daterangepicker {
     position: absolute;
     color: inherit;
@@ -300,7 +303,7 @@ $secondary-text-color: #9da3a6; // calendar-- weekdays label
   
   
   .daterangepicker.dropdown-menu.ltr.show-calendar.opensright {
-        top: 66px !important;
+        top: 116px !important;
         border-color: $primary-color;
         box-shadow: none !important; 
   }
