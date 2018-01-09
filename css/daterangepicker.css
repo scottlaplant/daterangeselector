@@ -428,7 +428,7 @@ td.sun.in-range.available {
 .daterangepicker td.active.start-date::before {
   background: #b3d4ea;
   width: 50% !important;
-  left: 17px !important;
+  left: 16px !important;
   height: 32px;
   content: '';
   display: block;
@@ -439,7 +439,7 @@ td.sun.in-range.available {
 .daterangepicker td.active.end-date::before {
   background: #b3d4ea;
   width: 50% !important;
-  left: -1px !important;
+  left: 0px !important;
   height: 32px;
   content: '';
   display: block;
@@ -626,7 +626,16 @@ th.noshow {
 input#daterange-start.date-input, input#daterange-end.date-input {
   outline: none; }
 
+.daterangepicker td {
+  border-left: 0px;
+  border-right: 0px; }
 .daterangepicker td.start-date.on-start::before, .daterangepicker td.wrong-direction::before {
   content: none !important; }
+.daterangepicker td.end-date.sun::before, .daterangepicker td.end-date.start-date::before {
+  content: none; }
+.daterangepicker td.sun.on-sun::before {
+  content: none !important; }
+.daterangepicker td.end-date {
+  background-color: transparent !important; }
 
 /*# sourceMappingURL=daterangepicker.css.map */

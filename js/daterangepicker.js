@@ -523,6 +523,7 @@
                 this.updateElement();
 
             this.updateMonthsInView();
+
         },
 
         isInvalidDate: function() {
@@ -1341,6 +1342,7 @@
                     $(e.target).removeClass('wrong-direction');
                 }
 
+
                 this.container.find('.calendar tbody td').each(function(index, el) {
 
                     //skip week numbers, only look at dates
@@ -1370,6 +1372,14 @@
             if($(e.target).next().hasClass("end-date")){
                 $(e.target).addClass('before-end');
             }
+
+            if(!($(e.target).next().hasClass("in-range")) && $(e.target).hasClass("sun")) {
+                $("td.sun").removeClass("on-sun");
+                $(e.target).addClass("on-sun");
+            }else if(!($(e.target).hasClass("sun"))){
+                $("td.sun").removeClass("on-sun");
+            }
+
         },
 
         clickDate: function(e) {
@@ -1431,6 +1441,7 @@
                 //special case: clicking the same date for start/end,
                 //but the time of the end date is before the start date
                 this.setEndDate(this.startDate.clone());
+
             } else { // picking end
                 if (this.timePicker) {
                     var hour = parseInt(this.container.find('.right .hourselect').val(), 10);
@@ -1447,6 +1458,9 @@
                 }
 
                 this.setEndDate(date.clone());
+
+                
+
 
                 if (this.autoApply) {
                   this.calculateChosenLabel();
@@ -1476,6 +1490,8 @@
 
             //This is to cancel the blur event handler if the mouse was in one of the inputs
             e.stopPropagation();
+
+
 
 
         },
