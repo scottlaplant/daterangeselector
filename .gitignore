@@ -13,3 +13,4 @@ Error.log
 *.sublime-project
 *.sublime-workspace
 sftp-config.json
+CNAME
