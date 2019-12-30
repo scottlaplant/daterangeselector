@@ -39,9 +39,9 @@ And for the javascript:
 Don't forget you'll need to include the regular bootstrap and jquery libraries too, depending on what you intend to use.
 
 
-<!-- ## Built With -->
+ ## Built With 
 
-<!-- * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
@@ -65,7 +65,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc -->
+dangrossman - this is his daterangepicker.com code - I tweaked the css.
+* Paypal.com - this is a copy of their daterange picker - I liked the look so I tried to replicate it
+
 
