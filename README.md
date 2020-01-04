@@ -49,18 +49,18 @@ Don't forget you'll need to include the regular bootstrap and jquery libraries t
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please submit pull requests to us and explain what you're attempting to do/fix.
 
-## Versioning
+<!--- ## Versioning --->
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+<!--- We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). --->
 
 ## Authors
 
 * **Dan Grossman** - *Creator of the daterange picker* - [dangrossman] (https://daterangepicker.com)
-* **Billie Thompson** - *Creator of the README template I'm using (thanks Billie)* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Scott LaPlant** - *Creator of this version of the daterange selector* - [scottlaplant](https://scottlaplant.com)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+<!--- See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. --->
 
 ## License
 
@@ -68,7 +68,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-dangrossman - this is his daterangepicker.com code - I tweaked the css.
+* @dangrossman - this is his daterangepicker.com code - I tweaked the css.
 * Paypal.com - this is a copy of their daterange picker - I liked the look so I tried to replicate it
+* Billie Thompson - *Creator of the README template I'm using (thanks Billie)* - [PurpleBooth](https://github.com/PurpleBooth)
 
 
