@@ -49,7 +49,7 @@ Don't forget you'll need to include the regular bootstrap and jquery libraries t
 
 ## Contributing
 
-Please submit pull requests to us and explain what you're attempting to do/fix.
+Please submit a pull requests and explain what you're attempting to do/fix.
 
 <!--- ## Versioning --->
 
