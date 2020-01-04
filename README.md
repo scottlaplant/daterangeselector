@@ -41,9 +41,11 @@ Don't forget you'll need to include the regular bootstrap and jquery libraries t
 
  ## Built With 
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+[DateRangePicker] (https://daterangepicker.com) - Code this date range picker is based on.
+<!--- * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used --->
+<!--- * [Maven](https://maven.apache.org/) - Dependency Management --->
+<!--- * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds --->
+
 
 ## Contributing
 
@@ -55,7 +57,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Dan Grossman** - *Creator of the daterange picker* - [dangrossman] (https://daterangepicker.com)
+* **Billie Thompson** - *Creator of the README template I'm using (thanks Billie)* - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
